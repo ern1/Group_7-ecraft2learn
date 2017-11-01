@@ -1,0 +1,16 @@
+{
+   "manifest_version": 2,
+   "name": "X-frame-remover",
+   "version": "1.0",
+   "description": "Removing X-Frame-Options from HTTP(S) response headers",
+
+   "background": {
+      "scripts": [ "bg.js" ] //The file that removes the x-frame-options
+   }, 
+
+   "permissions": [ 
+      "webRequest",  //The necessary API
+      "webRequestBlocking", //Required if using an synchronous call-back.
+      "<all_urls>"  //Adding hosts that the extension should apply for, in this case all hosts.  
+   ]
+}

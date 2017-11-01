@@ -1,0 +1,63 @@
+html{
+    height:100%;
+    width:100%;
+}
+
+body { 
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    max-width: 450pt;
+}
+
+/* For mobile */
+.container {
+    transform: translateY(25%);
+}
+
+/* For tablets */
+@media only screen and (min-width: 600px) {
+    .container {
+        transform: translateY(40%);
+    }
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+    .container {
+        transform: translateY(60%);
+    }
+}
+
+.panel{
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+#logo {
+    margin: auto; 
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+    background-color: #9AC33B;
+    border-color: #9AC33B;
+}
+    
+.btn
+{
+    background-color: #3396CE;
+    border-color: #3396CE;
+}
+
+p {
+    float: right;
+    color: #FF0000;
+}
+

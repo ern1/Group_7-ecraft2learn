@@ -1,0 +1,268 @@
+html{
+  height:100%;
+  width:100%;
+}
+
+body { 
+  background-image: url("../images/bg2.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+header {
+	margin-bottom: 25px;
+}
+
+
+#ecraft-logo {
+  float: left;
+}
+
+#eCraftLogo {
+	margin:0px;
+	padding:0px;
+  width:250px;
+  height:45px;
+}
+
+#eCraftMotto {
+	margin: 0 0 0 25px;
+}
+
+@media (min-width: 992px) {
+  #eCraftLogo {
+  	width:350px;
+    height:67px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #eCraftLogo {
+		width:441px;
+	  height:84px;
+  }
+}
+
+.btn-dropddown {
+  border-radius: 0px;
+  position: absolute;
+  right: 30pt;
+  top: 30pt;
+}
+
+.tile-icon-inactive {
+  filter: grayscale(85%);
+  opacity: 0.7;
+}
+
+
+
+
+/* Metro overrides */
+.image-container .frame {
+  background-color: transparent !important;
+}
+
+.text-small {
+	font-size: 1rem;
+}
+
+.tile-wide:hover, .tile-small:hover, .tile:hover, .tile-square:hover {
+  outline: white solid 3px;
+}
+
+.tile-group-title {
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+.large-button {
+  height: 5rem;
+  width: 10rem;
+  font-size: 1.7rem;
+  line-height: 2.55rem;
+}
+
+.tile-small .slide-over, .tile-small .tile-label { 
+  visibility: hidden; 
+}
+
+
+/* custom position of the question-marks so it reacted on click-events in the tiles. */
+.absolute-right-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+
+/* tray-bar and the tiles-buttons in it css */
+#bottom-tray {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  height: auto;
+}
+
+#bottom-tray:hover {
+  opacity: 1;
+}
+
+#btn-lock {
+  z-index: 10000;
+  margin: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.tile-icon {
+  width: 55px;
+  height: 55px;
+  margin: 5px !important;
+}
+
+
+
+
+/* .custom-container combines bootstraps .container and .container-fluid. On large screens the .container is active, 
+othervise the .container-fluid is in use.  */
+.custom-container {
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  margin-right: auto;
+	  margin-left: auto;
+}
+
+@media (min-width: 1600px) {
+  .custom-container {
+    width: 1570px;
+    margin: 0 0 0 0;
+  }
+}
+
+/* just in case */
+.row {
+  clear:both;
+}
+
+
+
+
+/* .flex-width is a combination of metros .tile-group-two and .tile-group-three classes
+Allowing a .tile-group to span 480px on large screens and one landscape-mode in mobile. */
+.flex-width {
+	width: 320px;
+}
+
+@media (min-width: 1600px) {
+	.flex-width  {
+	  width: 480px;
+	}
+}
+
+@media (orientation: landscape) and  (max-width: 767px){
+	.flex-width  {
+	  width: 480px;
+	}
+}
+
+
+
+
+/* Modal tweaks */
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-content {
+  color: black;
+}
+
+.iframe-modal {
+  padding: 0 !important;
+}
+
+.cu-modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+	.cu-modal-dialog {
+		width: 90%;
+	  height: 80%;
+    position: relative;
+		margin: 30px auto;
+	}
+}
+
+.cu-modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+
+.cu-modal-body {
+  position: relative;
+  padding: 15px;
+  height: 95%;
+}
+
+.cu-modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 5%;
+}
+
+.cu-modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+  height: 5%;
+}
+
+.maximized {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body.modal-open .custom-container, body.modal-open header{
+    filter: blur(2px) grayscale(80%);
+    opacity: 0.9;
+}
+
+
+
+
+/* font awesome overrides */
+.fa-window-minimize, .fa-window-maximize, .fa-window-close, .fa-window-close-o, .fa-window-restore  {
+  padding: 5px;
+  float: right;
+  opacity: 0.5;
+}
+
+.fa {
+    transform: translateY(-50%);
+}
+
+.fa-window-minimize:hover, .fa-window-maximize:hover, .fa-window-close:hover, .fa-window-close-o:hover, .fa-window-restore:hover {
+  opacity: 1;
+}
+  
