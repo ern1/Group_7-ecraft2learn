@@ -11,9 +11,6 @@
     {
         require_once('database.php');
         $conn = (new DB())->connect();
-
-        /*$username = mysqli_real_escape_string($conn, $_POST['username']);
-        $password = mysqli_real_escape_string($conn, $_POST['password']);*/
 	    
 	$username = $conn->real_escape_string($_POST["username"]);
 	$password = $conn->real_escape_string($_POST["password"]);
